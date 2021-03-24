@@ -1,8 +1,8 @@
-function randomInteger(min, max) {
+function randomInteger (min, max) {
   if (min >= 0 && max >= 0) {
     return parseInt((Math.random() * (max - min) + min), 10);
   }
-  if (max < min || max == min) {
+  if (max < min || max === min) {
     return false;
   }
 }

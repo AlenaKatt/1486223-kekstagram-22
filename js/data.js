@@ -22,10 +22,12 @@ const LIKES_MIN = 15;
 const LIKES_MAX = 200;
 const OBJECTS_COUNT = 25;
 
-export {MESSAGES_AUTHOR};
-export {NAMES_AUTHOR};
-export {COMMENT_INDEX};
-export {AVATAR_COUNT};
-export {LIKES_MIN};
-export {LIKES_MAX};
-export {OBJECTS_COUNT};
+export {
+  MESSAGES_AUTHOR,
+  NAMES_AUTHOR,
+  COMMENT_INDEX,
+  AVATAR_COUNT,
+  LIKES_MIN,
+  LIKES_MAX,
+  OBJECTS_COUNT
+};

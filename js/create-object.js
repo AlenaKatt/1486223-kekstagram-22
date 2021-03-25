@@ -11,7 +11,6 @@ const createComment = () => {
   const randomIdCommentIndex = randomInteger (0, COMMENT_INDEX);
   const randomAvatarIndex = randomInteger (1, AVATAR_COUNT);
   const randomNameIndex = randomInteger (0, NAMES_AUTHOR.length - 1);
-
   return {
     id: randomIdCommentIndex,
     avatar: 'img/avatar-' + randomAvatarIndex + '.svg',

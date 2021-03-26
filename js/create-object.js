@@ -1,5 +1,6 @@
 import {randomInteger} from './util.js';
 import {COMMENT_COUNT_MAX, MESSAGES_AUTHOR, NAMES_AUTHOR, COMMENT_INDEX, AVATAR_COUNT, LIKES_MIN, LIKES_MAX, OBJECTS_COUNT} from './data.js';
+
 // Создать функцию
 // Внутри нее сделать цикл
 // Длину цикла определить рандомно

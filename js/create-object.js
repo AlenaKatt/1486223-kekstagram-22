@@ -14,7 +14,6 @@ const createCommentCount = () => {
   return arrCommentCount;
 }
 
-// Функция по созданию комментария
 const createComment = () => {
   const randomIdCommentIndex = randomInteger (0, COMMENT_INDEX);
   const randomAvatarIndex = randomInteger (1, AVATAR_COUNT);

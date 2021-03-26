@@ -1,4 +1,4 @@
-let randomInteger = function (min, max) {
+const randomInteger = function (min, max) {
   if (min >= 0 && max >= 0) {
     return parseInt((Math.random() * (max - min) + min), 10);
   }
@@ -7,7 +7,7 @@ let randomInteger = function (min, max) {
   }
 }
 
-let checkLength = function (lineToCheck, maxLenth) {
+const checkLength = function (lineToCheck, maxLenth) {
   if (lineToCheck.length <= maxLenth) {
     return true;
   }

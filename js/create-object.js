@@ -1,11 +1,5 @@
 import {randomInteger} from './util.js';
-import {MESSAGES_AUTHOR} from './data.js';
-import {NAMES_AUTHOR} from './data.js';
-import {COMMENT_INDEX} from './data.js';
-import {AVATAR_COUNT} from './data.js';
-import {LIKES_MIN} from './data.js';
-import {LIKES_MAX} from './data.js';
-import {OBJECTS_COUNT} from './data.js';
+import {MESSAGES_AUTHOR, NAMES_AUTHOR, COMMENT_INDEX, AVATAR_COUNT, LIKES_MIN, LIKES_MAX, OBJECTS_COUNT} from './data.js';
 
 const createComment = () => {
   const randomIdCommentIndex = randomInteger (0, COMMENT_INDEX);
@@ -48,6 +42,9 @@ const createObject = (currentValue, index) => {
   }
 }
 
-const arrayObjects = new Array(OBJECTS_COUNT).fill(null).map((currentValue, index) => createObject(currentValue, index));
+const arrayObjects = () => new Array(OBJECTS_COUNT).fill(null).map((currentValue, index) => createObject(currentValue, index));
 
-arrayObjects();
+export{
+  arrayObjects,
+  createObject
+};

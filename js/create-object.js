@@ -31,6 +31,7 @@ const getRandomMessages = () => {
 
 const createObject = (currentValue, index) => {
   const randomLikesIndex = randomInteger (LIKES_MIN, LIKES_MAX);
+
   return {
     id: index + 1,
     url: 'photos/' + (index + 1) + '.jpg',

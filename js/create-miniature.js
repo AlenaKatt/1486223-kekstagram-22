@@ -11,7 +11,6 @@ createMiniature.forEach(({url, likes}) => {
   miniatureElement.querySelector('.picture__likes').textContent = likes;
   //Количество комментариев comments подставьте как текстовое содержание элемента .picture__comments.
   //Узнать длину массива comments
-  //Вставить длину в 15 строку
   miniatureElement.querySelector('.picture__comments').textContent = createCommentCount().length;
   createMiniatureFragment.appendChild(miniatureElement);
 });

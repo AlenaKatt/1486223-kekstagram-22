@@ -7,8 +7,8 @@ const randomInteger = function (min, max) {
   }
 }
 
-const checkLength = function (lineToCheck, maxLenth) {
-  if (lineToCheck.length <= maxLenth) {
+const checkLength = function (lineToCheck, maxLength) {
+  if (lineToCheck.length <= maxLength) {
     return true;
   }
   else {

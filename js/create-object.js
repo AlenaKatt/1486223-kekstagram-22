@@ -1,5 +1,6 @@
 import {randomInteger} from './util.js';
 import {COMMENT_COUNT_MAX, MESSAGES_AUTHOR, NAMES_AUTHOR, COMMENT_INDEX, AVATAR_COUNT, LIKES_MIN, LIKES_MAX, OBJECTS_COUNT} from './data.js';
+
 // Создать функцию
 // Внутри нее сделать цикл
 // Длину цикла определить рандомно
@@ -12,7 +13,7 @@ const createCommentCount = () => {
   }
   return arrCommentCount;
 }
-// Функция по созданию комментария
+
 const createComment = () => {
   const randomIdCommentIndex = randomInteger (0, COMMENT_INDEX);
   const randomAvatarIndex = randomInteger (1, AVATAR_COUNT);
@@ -24,6 +25,7 @@ const createComment = () => {
     name: NAMES_AUTHOR[randomNameIndex],
   }
 }
+
 // Получить рандомное число от 1 2 - количество элементов в массиве
 // Получить рандомное число для комментариев - что именно
 // Создать массив месаджей с количеством элементов, которое выпало Цикл

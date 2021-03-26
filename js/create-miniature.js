@@ -15,6 +15,3 @@ createMiniature.forEach(({url, likes, comments}) => {
 });
 
 miniatureContainer.appendChild(createMiniatureFragment);
-
-//Временно проверяю контейнер
-console.log(miniatureContainer);

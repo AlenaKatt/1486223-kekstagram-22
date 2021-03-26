@@ -5,6 +5,7 @@ const createComment = () => {
   const randomIdCommentIndex = randomInteger (0, COMMENT_INDEX);
   const randomAvatarIndex = randomInteger (1, AVATAR_COUNT);
   const randomNameIndex = randomInteger (0, NAMES_AUTHOR.length - 1);
+
   return {
     id: randomIdCommentIndex,
     avatar: 'img/avatar-' + randomAvatarIndex + '.svg',
@@ -40,7 +41,6 @@ const createObject = (currentValue, index) => {
     comments: createComment(),
   }
 }
-
-const arrayObjects =() => new Array(OBJECTS_COUNT).fill(null).map((currentValue, index) => createObject(currentValue, index));
+const arrayObjects = () => new Array(OBJECTS_COUNT).fill(null).map((currentValue, index) => createObject(currentValue, index));
 
 export {arrayObjects};

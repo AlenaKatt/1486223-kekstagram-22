@@ -41,7 +41,6 @@ const createObject = (currentValue, index) => {
     comments: createComment(),
   }
 }
-
 const arrayObjects = () => new Array(OBJECTS_COUNT).fill(null).map((currentValue, index) => createObject(currentValue, index));
 
 export {arrayObjects};

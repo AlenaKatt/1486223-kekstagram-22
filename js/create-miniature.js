@@ -9,8 +9,6 @@ createMiniature.forEach(({url, likes, comments}) => {
   const miniatureElement = miniatureTemplate.cloneNode(true);
   miniatureElement.querySelector('.picture__img').src = url;
   miniatureElement.querySelector('.picture__likes').textContent = likes;
-  //Количество комментариев comments подставьте как текстовое содержание элемента .picture__comments.
-  //Узнать длину массива comments
   miniatureElement.querySelector('.picture__comments').textContent = comments.length;
   createMiniatureFragment.appendChild(miniatureElement);
 });

@@ -16,7 +16,7 @@ const NAMES_AUTHOR = [
   'Василиса',
 ];
 
-const COMMENT_COUNT_MAX = 5;
+const COMMENTS_MAX = 5;
 const COMMENT_INDEX = 1000;
 const AVATAR_COUNT = 6;
 const LIKES_MIN = 15;
@@ -24,7 +24,7 @@ const LIKES_MAX = 200;
 const OBJECTS_COUNT = 25;
 
 export {
-  COMMENT_COUNT_MAX,
+  COMMENTS_MAX,
   MESSAGES_AUTHOR,
   NAMES_AUTHOR,
   COMMENT_INDEX,

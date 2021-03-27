@@ -1,17 +1,17 @@
 import {randomInteger} from './util.js';
-import {COMMENT_COUNT_MAX, MESSAGES_AUTHOR, NAMES_AUTHOR, COMMENT_INDEX, AVATAR_COUNT, LIKES_MIN, LIKES_MAX, OBJECTS_COUNT} from './data.js';
+import {COMMENTS_MAX, MESSAGES_AUTHOR, NAMES_AUTHOR, COMMENT_INDEX, AVATAR_COUNT, LIKES_MIN, LIKES_MAX, OBJECTS_COUNT} from './data.js';
 
 // Создать функцию
 // Внутри нее сделать цикл
 // Длину цикла определить рандомно
 // Это рандомное количество раз у меня должна отработать функция по созданию комментариев
-const createCommentCount = () => {
-  let arrCommentCount = [];
-  const randomCommentCount = randomInteger (1, COMMENT_COUNT_MAX);
+const createComments = () => {
+  let comments = [];
+  const randomCommentCount = randomInteger (1, COMMENTS_MAX);
   for (let i = 0; i < randomCommentCount; i ++) {
-    arrCommentCount[i] = createComment();
+    comments[i] = createComment();
   }
-  return arrCommentCount;
+  return comments;
 }
 
 const createComment = () => {
@@ -49,13 +49,12 @@ const createObject = (currentValue, index) => {
     url: 'photos/' + (index + 1) + '.jpg',
     description: 'котик',
     likes: randomLikesIndex,
-    comments: createCommentCount(),
+    comments: createComments(),
   }
 }
 
 const arrayObjects = () => new Array(OBJECTS_COUNT).fill(null).map((currentValue, index) => createObject(currentValue, index));
 
 export{
-  createCommentCount,
   arrayObjects
 };
